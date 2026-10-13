@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="10dp" android:gravity="center_vertical" android:background="@drawable/widget_bg">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:layout_marginBottom="8dp">
+        <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_gravity="center" android:src="@drawable/wi_checklist" android:tint="#B7BBE0" android:contentDescription="@null"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="7dp"
+            android:text="TASKS &amp; REMINDERS" android:textColor="#B7BBE0" android:textSize="11sp" android:textStyle="bold" android:letterSpacing="0.12"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="46dp" android:orientation="horizontal">
+    <LinearLayout android:id="@+id/btn_task" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+        android:gravity="center_vertical" android:orientation="horizontal" android:padding="8dp" android:layout_marginEnd="6dp"
+        android:background="@drawable/wbtn_primary" android:contentDescription="Task">
+        <FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:background="@drawable/wtile_primary">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="center" android:src="@drawable/wi_circle_check" android:tint="#D9D4FF" android:contentDescription="@null"/>
+        </FrameLayout>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="9dp"
+            android:text="Task" android:textColor="#D9D4FF" android:textSize="14sp" android:textStyle="bold" android:maxLines="1" android:ellipsize="end"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/btn_reminder" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+        android:gravity="center_vertical" android:orientation="horizontal" android:padding="8dp"
+        android:background="@drawable/wbtn_neutral" android:contentDescription="Reminder">
+        <FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:background="@drawable/wtile_neutral">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="center" android:src="@drawable/wi_bell" android:tint="#E3E5F7" android:contentDescription="@null"/>
+        </FrameLayout>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="9dp"
+            android:text="Reminder" android:textColor="#E3E5F7" android:textSize="14sp" android:textStyle="bold" android:maxLines="1" android:ellipsize="end"/>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal">
+        <LinearLayout android:id="@+id/chip_hour" android:layout_width="wrap_content" android:layout_height="28dp" android:gravity="center_vertical"
+            android:orientation="horizontal" android:paddingStart="10dp" android:paddingEnd="12dp" android:layout_marginEnd="6dp" android:background="@drawable/wchip" android:contentDescription="In 1 hour">
+            <ImageView android:layout_width="14dp" android:layout_height="14dp" android:layout_gravity="center" android:src="@drawable/wi_clock" android:tint="#C9CCE8" android:contentDescription="@null"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5dp"
+                android:text="In 1 hour" android:textColor="#E3E5F7" android:textSize="12sp" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/chip_tonight" android:layout_width="wrap_content" android:layout_height="28dp" android:gravity="center_vertical"
+            android:orientation="horizontal" android:paddingStart="10dp" android:paddingEnd="12dp" android:layout_marginEnd="6dp" android:background="@drawable/wchip" android:contentDescription="Tonight">
+            <ImageView android:layout_width="14dp" android:layout_height="14dp" android:layout_gravity="center" android:src="@drawable/wi_moon" android:tint="#C9CCE8" android:contentDescription="@null"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5dp"
+                android:text="Tonight" android:textColor="#E3E5F7" android:textSize="12sp" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/chip_tomorrow" android:layout_width="wrap_content" android:layout_height="28dp" android:gravity="center_vertical"
+            android:orientation="horizontal" android:paddingStart="10dp" android:paddingEnd="12dp" android:background="@drawable/wchip" android:contentDescription="Tomorrow">
+            <ImageView android:layout_width="14dp" android:layout_height="14dp" android:layout_gravity="center" android:src="@drawable/wi_sun" android:tint="#C9CCE8" android:contentDescription="@null"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5dp"
+                android:text="Tomorrow" android:textColor="#E3E5F7" android:textSize="12sp" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

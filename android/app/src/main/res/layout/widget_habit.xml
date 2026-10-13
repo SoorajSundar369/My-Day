@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal" android:padding="10dp" android:gravity="center_vertical" android:background="@drawable/widget_bg">
+    <LinearLayout android:id="@+id/btn_habit" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+        android:gravity="center_vertical" android:orientation="horizontal" android:padding="8dp" android:layout_marginEnd="6dp"
+        android:background="@drawable/wbtn_habit" android:contentDescription="New habit">
+        <FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:background="@drawable/wtile_habit">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="center" android:src="@drawable/wi_plus" android:tint="#FFCB94" android:contentDescription="@null"/>
+        </FrameLayout>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="9dp"
+            android:text="New habit" android:textColor="#FFCB94" android:textSize="14sp" android:textStyle="bold" android:maxLines="1" android:ellipsize="end"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/btn_open" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+        android:gravity="center_vertical" android:orientation="horizontal" android:padding="8dp"
+        android:background="@drawable/wbtn_neutral" android:contentDescription="Open app">
+        <FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:background="@drawable/wtile_neutral">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="center" android:src="@drawable/wi_lock" android:tint="#E3E5F7" android:contentDescription="@null"/>
+        </FrameLayout>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="9dp"
+            android:text="Open app" android:textColor="#E3E5F7" android:textSize="14sp" android:textStyle="bold" android:maxLines="1" android:ellipsize="end"/>
+    </LinearLayout>
+</LinearLayout>

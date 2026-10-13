@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal" android:padding="10dp" android:gravity="center_vertical" android:background="@drawable/widget_bg">
+    <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center">
+        <FrameLayout android:id="@+id/btn_task" android:layout_width="44dp" android:layout_height="44dp" android:layout_gravity="center"
+            android:background="@drawable/wcirc_primary" android:contentDescription="Add task">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center" android:src="@drawable/wi_circle_check" android:tint="#D9D4FF" android:contentDescription="@null"/>
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center">
+        <FrameLayout android:id="@+id/btn_reminder" android:layout_width="44dp" android:layout_height="44dp" android:layout_gravity="center"
+            android:background="@drawable/wcirc_neutral" android:contentDescription="Add reminder">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center" android:src="@drawable/wi_bell" android:tint="#E3E5F7" android:contentDescription="@null"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:shortcutId="add_expense" android:enabled="true" android:icon="@drawable/ic_sc_expense"
+        android:shortcutShortLabel="@string/sc_expense_short" android:shortcutLongLabel="@string/sc_expense_long">
+        <intent android:action="com.sujay.taskme.QUICK" android:targetPackage="com.sujay.taskme" android:targetClass="com.sujay.taskme.MainActivity">
+            <extra android:name="quick" android:value="expense"/>
+        </intent>
+    </shortcut>
+    <shortcut android:shortcutId="add_income" android:enabled="true" android:icon="@drawable/ic_sc_income"
+        android:shortcutShortLabel="@string/sc_income_short" android:shortcutLongLabel="@string/sc_income_long">
+        <intent android:action="com.sujay.taskme.QUICK" android:targetPackage="com.sujay.taskme" android:targetClass="com.sujay.taskme.MainActivity">
+            <extra android:name="quick" android:value="income"/>
+        </intent>
+    </shortcut>
+    <shortcut android:shortcutId="new_journal" android:enabled="true" android:icon="@drawable/ic_sc_journal"
+        android:shortcutShortLabel="@string/sc_journal_short" android:shortcutLongLabel="@string/sc_journal_long">
+        <intent android:action="com.sujay.taskme.QUICK" android:targetPackage="com.sujay.taskme" android:targetClass="com.sujay.taskme.MainActivity">
+            <extra android:name="quick" android:value="journal"/>
+        </intent>
+    </shortcut>
+    <shortcut android:shortcutId="new_task" android:enabled="true" android:icon="@drawable/ic_sc_task"
+        android:shortcutShortLabel="@string/sc_task_short" android:shortcutLongLabel="@string/sc_task_long">
+        <intent android:action="com.sujay.taskme.QUICK" android:targetPackage="com.sujay.taskme" android:targetClass="com.sujay.taskme.MainActivity">
+            <extra android:name="quick" android:value="task"/>
+        </intent>
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_money_label">MyDay · Money</string>
+    <string name="widget_journal_label">MyDay · Quick journal</string>
+    <string name="widget_task_label">MyDay · Tasks and reminders</string>
+    <string name="widget_habit_label">MyDay · Habits</string>
+    <string name="widget_quick_medium_label">MyDay · Quick add</string>
+    <string name="widget_quickbar_label">MyDay · Quick add bar</string>
+    <string name="widget_money_desc">Add income or an expense in one tap. Shows nothing private.</string>
+    <string name="widget_journal_desc">A writing idea of the day. Write or record a voice note. Never shows your entries.</string>
+    <string name="widget_task_desc">Add a task or a reminder in one tap, with quick time choices.</string>
+    <string name="widget_habit_desc">Start a new habit or open the app.</string>
+    <string name="widget_quick_medium_desc">Expense, income, journal, task, reminder and habit, with labels.</string>
+    <string name="widget_quickbar_desc">The same quick actions as a slim row of icons.</string>
+    <string name="sc_expense_short">Expense</string>
+    <string name="sc_expense_long">Add expense</string>
+    <string name="sc_income_short">Income</string>
+    <string name="sc_income_long">Add income</string>
+    <string name="sc_journal_short">Journal</string>
+    <string name="sc_journal_long">New journal entry</string>
+    <string name="sc_task_short">New task</string>
+    <string name="sc_task_long">Add a task</string>
+</resources>

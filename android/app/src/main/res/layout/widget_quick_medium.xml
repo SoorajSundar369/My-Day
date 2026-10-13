@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="10dp" android:gravity="center_vertical" android:background="@drawable/widget_bg">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:layout_marginBottom="8dp">
+        <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_gravity="center" android:src="@drawable/wi_bolt" android:tint="#B7BBE0" android:contentDescription="@null"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="7dp"
+            android:text="QUICK ADD" android:textColor="#B7BBE0" android:textSize="11sp" android:textStyle="bold" android:letterSpacing="0.12"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+        <LinearLayout android:id="@+id/btn_expense" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_margin="3dp" android:gravity="center" android:orientation="vertical" android:background="@drawable/wbtn_expense" android:contentDescription="Expense">
+            <FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:background="@drawable/wtile_expense">
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="center" android:src="@drawable/wi_arrow_up_right" android:tint="#FFA8B6" android:contentDescription="@null"/>
+            </FrameLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                android:text="Expense" android:textColor="#FFA8B6" android:textSize="12sp" android:textStyle="bold" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/btn_income" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_margin="3dp" android:gravity="center" android:orientation="vertical" android:background="@drawable/wbtn_income" android:contentDescription="Income">
+            <FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:background="@drawable/wtile_income">
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="center" android:src="@drawable/wi_arrow_down_left" android:tint="#7DE8C4" android:contentDescription="@null"/>
+            </FrameLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                android:text="Income" android:textColor="#7DE8C4" android:textSize="12sp" android:textStyle="bold" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/btn_journal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_margin="3dp" android:gravity="center" android:orientation="vertical" android:background="@drawable/wbtn_primary" android:contentDescription="Journal">
+            <FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:background="@drawable/wtile_primary">
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="center" android:src="@drawable/wi_pencil" android:tint="#D9D4FF" android:contentDescription="@null"/>
+            </FrameLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                android:text="Journal" android:textColor="#D9D4FF" android:textSize="12sp" android:textStyle="bold" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+        <LinearLayout android:id="@+id/btn_task" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_margin="3dp" android:gravity="center" android:orientation="vertical" android:background="@drawable/wbtn_neutral" android:contentDescription="Task">
+            <FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:background="@drawable/wtile_neutral">
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="center" android:src="@drawable/wi_circle_check" android:tint="#E3E5F7" android:contentDescription="@null"/>
+            </FrameLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                android:text="Task" android:textColor="#E3E5F7" android:textSize="12sp" android:textStyle="bold" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/btn_reminder" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_margin="3dp" android:gravity="center" android:orientation="vertical" android:background="@drawable/wbtn_neutral" android:contentDescription="Reminder">
+            <FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:background="@drawable/wtile_neutral">
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="center" android:src="@drawable/wi_bell" android:tint="#E3E5F7" android:contentDescription="@null"/>
+            </FrameLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                android:text="Reminder" android:textColor="#E3E5F7" android:textSize="12sp" android:textStyle="bold" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/btn_habit" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_margin="3dp" android:gravity="center" android:orientation="vertical" android:background="@drawable/wbtn_habit" android:contentDescription="Habit">
+            <FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:background="@drawable/wtile_habit">
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="center" android:src="@drawable/wi_flame" android:tint="#FFCB94" android:contentDescription="@null"/>
+            </FrameLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"
+                android:text="Habit" android:textColor="#FFCB94" android:textSize="12sp" android:textStyle="bold" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
